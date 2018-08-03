@@ -1,0 +1,36 @@
+import React, { Component } from 'react';
+import { StyleSheet } from 'react-native';
+import { Container, Header, Title, Content, View, Text } from 'native-base';
+
+class ProfileScreen extends Component {
+  render() {
+    return (
+      <Container style={styles.container}>
+        <Header>
+          <Title>App</Title>
+        </Header>
+        <Content>
+          <View style={styles.mainView}>
+            <Text>Perfil!</Text>
+          </View>
+        </Content>
+      </Container>
+    );
+  }
+}
+
+export default ProfileScreen;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'salmon',
+  },
+
+  mainView: {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
